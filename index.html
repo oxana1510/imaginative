@@ -18,7 +18,7 @@
 					</div>
 
 					<div class="header__nav-link">
-						<a href="#">Sing Up</a>
+						<a href="#" class="singup">Sing Up</a>
 						<a href="#">Login</a>
 						<a href="#">RSS Feeds</a>
 						<a href="#">Archived News</a>
@@ -195,9 +195,9 @@
 			</div>
 			<div class="ContactUs">
 				<h4>Contact Us</h4>
-				<form action="#" name="newform" method="post" class="form_contactUs">
-					<input type="text" placeholder="Name" class="ContactUs__input">
-					<input type="text" placeholder="Email" class="ContactUs__input">
+				<form action="#" name="newform" class="form_contactUs">
+					<input type="text" placeholder="Name" class="ContactUs__input" autocomplete="on">
+					<input type="text" placeholder="Email" class="ContactUs__input" autocomplete="on">
 					<textarea type="text" placeholder="Message"></textarea>
 					<div class="button__block">
 						<input type="submit" value="SUBMIT" class="button-block-submit">
@@ -212,8 +212,18 @@
 	</div>
 
 	</footer>
-
-
+<div class="wrapper-window">
+		<div class="pop-up-window ">	
+			<form action="" class="form-popup" action="https://echo.htmlacademy.ru" method="post">
+				<label for="name-popup">Name</label>
+				<input type="text" id="name-popup" class="name" name="NameLogin">
+				<label for="password-popup">Password</label>
+				<input type="password" id="password-popup" class="name" name="Password">
+				<button type="submit" class="fixed-submit">Sing Up</button>
+				<button type="button" class="close">&#9746;</button>
+			</form>
+		</div>
+</div>
 		</div>
 		
 
@@ -234,6 +244,7 @@
 
 
 
+<script src="js.js"></script>
 
 </body>
 </html>
